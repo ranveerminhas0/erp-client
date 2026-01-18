@@ -15,31 +15,65 @@ import Reports from "@/pages/reports";
 import Settings from "@/pages/settings";
 import InvoiceList from "@/pages/invoice-list";
 import StockMaster from "@/pages/stock-master";
-
 import LoginPage from "@/pages/login";
 
 function Router() {
   return (
     <Switch>
       <Route path="/login" component={LoginPage} />
+      <Route path="/daily-book">
+        <Layout>
+          <DailyBook />
+        </Layout>
+      </Route>
+      <Route path="/inventory">
+        <Layout>
+          <Inventory />
+        </Layout>
+      </Route>
+      <Route path="/billing">
+        <Layout>
+          <Billing />
+        </Layout>
+      </Route>
+      <Route path="/invoice-list">
+        <Layout>
+          <InvoiceList />
+        </Layout>
+      </Route>
+      <Route path="/stock-transfer">
+        <Layout>
+          <StockTransfer />
+        </Layout>
+      </Route>
+      <Route path="/accounts">
+        <Layout>
+          <Accounts />
+        </Layout>
+      </Route>
+      <Route path="/price-list">
+        <Layout>
+          <PriceList />
+        </Layout>
+      </Route>
+      <Route path="/stock-master">
+        <Layout>
+          <StockMaster />
+        </Layout>
+      </Route>
+      <Route path="/reports">
+        <Layout>
+          <Reports />
+        </Layout>
+      </Route>
+      <Route path="/settings">
+        <Layout>
+          <Settings />
+        </Layout>
+      </Route>
       <Route path="/">
         <Layout>
-          <Switch>
-            <Route path="/" component={Dashboard} />
-            <Route path="/daily-book" component={DailyBook} />
-            <Route path="/inventory">
-              <Inventory />
-            </Route>
-            <Route path="/billing" component={Billing} />
-            <Route path="/invoice-list" component={InvoiceList} />
-            <Route path="/stock-transfer" component={StockTransfer} />
-            <Route path="/accounts" component={Accounts} />
-            <Route path="/price-list" component={PriceList} />
-            <Route path="/stock-master" component={StockMaster} />
-            <Route path="/reports" component={Reports} />
-            <Route path="/settings" component={Settings} />
-            <Route component={NotFound} />
-          </Switch>
+          <Dashboard />
         </Layout>
       </Route>
       <Route component={NotFound} />
