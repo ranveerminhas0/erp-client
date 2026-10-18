@@ -1,5 +1,7 @@
-### This was built back in mid-2023, in the pre-AI era.
-### This repo contains **only the frontend** of a much larger application that was actually used across **3 real, fast-paced retail showrooms**, all seamlessly connected as part of one system.
+# A Little Backstory
+
+*This was built back in mid-2023, in the pre-AI era.*
+*This repo contains **only the frontend** of a much larger application that was actually used across **3 real, fast-paced retail showrooms**, all seamlessly connected as part of one system.*
 
 
 # KLKG Enterprise Resource System
