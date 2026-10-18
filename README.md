@@ -88,4 +88,4 @@ Follow these steps to run the environment locally:
 
 ## Credits
 
-Developed by ...GOD HIMSELF.
+Made with code, caffeine, and questionable life choices.
